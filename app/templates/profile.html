@@ -1,0 +1,49 @@
+
+{% extends "base.html" %}
+    
+{% block main %}
+    
+<html>    
+<body>   
+    <div class = "container1">
+        <div id="img">
+            <img src = "{{url_for('static', filename = 'picprofile1.png')}}"/>
+        </div>
+        
+        
+        <div><h1>Alex Anderson </h1></div>
+        <div id="user">
+            <h5>@alex_og</h5>
+            <h4>Kingston, Jamaica</h4>
+            <h4>{{formatted_date}}</h4>
+        </div>
+        
+    </div>
+    
+    <div class="container2">
+    
+        <div id="para"><p>I am self-motivated and determined to learn but I tend to procrastinate sometimes which is my biggest downfall.</p></div>
+     
+            
+        <div id = "left">
+            <h5><strong>17</strong></h5>
+            <label class = "labels">Posts</label>
+        </div>
+
+        <div id = "center">
+            <h5><strong>727</strong></h5>
+            <label class = "labels">Following</label>
+        </div>
+        
+        <div id = "right">
+            <h5><strong>913</strong></h5>
+            <label class = "labels">Followers</label>
+        </div>
+        
+    
+        <div id ="button"><button id ='value'>Follow</button></div>
+    </div>
+</body>
+ 
+</html>
+{% endblock %}
